@@ -1,0 +1,12 @@
+
+version: '3'
+
+services:
+  ptnotifications:
+    build: .
+    container_name: pt-notifications-dc
+    volumes:
+      - ./settings.properties:/app/PTNotifications/settings.properties
+      - ./database:/app/PTNotifications/database
+      - ./logs:/app/PTNotifications/logs
+    restart: always
