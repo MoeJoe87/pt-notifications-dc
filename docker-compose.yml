@@ -4,7 +4,7 @@ version: '3'
 services:
   ptnotifications:
     build: .
-    container_name: pt-notifications-dc
+    container_name: pt-notifications
     volumes:
       - ./settings.properties:/app/ptnotifications/settings.properties
       - ./database:/app/ptnotifications/database
