@@ -2,7 +2,7 @@
 
 PT Notifications Docker
 
-Compatible with Profit Trailer bot version : v2.2.12
+Compatible with PT Notifications version : v1.3.2
 `https://wiki.profittrailer.com/doku.php?id=start`
 
 ## Install Docker
