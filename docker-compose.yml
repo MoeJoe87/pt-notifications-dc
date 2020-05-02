@@ -6,7 +6,7 @@ services:
     build: .
     container_name: pt-notifications-dc
     volumes:
-      - ./settings.properties:/app/PTNotifications/settings.properties
-      - ./database:/app/PTNotifications/database
-      - ./logs:/app/PTNotifications/logs
+      - ./settings.properties:/app/ptnotifications/settings.properties
+      - ./database:/app/ptnotifications/database
+      - ./logs:/app/ptnotifications/logs
     restart: always
