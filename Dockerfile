@@ -21,5 +21,3 @@ RUN chmod +x PTNotifications.jar
 VOLUME /app/ptnotifications
 
 CMD pm2 start pm2-PTNotifications.json && pm2 log 0
-
-dadad
