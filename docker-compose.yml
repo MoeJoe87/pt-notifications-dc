@@ -2,11 +2,15 @@
 version: '3'
 
 services:
-  ptnotifications:
-    build: .
+  profittrailer:
+    image: moli87/pt-notifications-dc
     container_name: pt-notifications
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Zurich
     volumes:
       - ./settings.properties:/app/ptnotifications/settings.properties
       - ./database:/app/ptnotifications/database
       - ./logs:/app/ptnotifications/logs
-    restart: always
+    restart: unless-stopped
